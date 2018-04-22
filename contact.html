@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>index</title>
+  </head>
+  <main>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="Social.html">Socials</a></li>
+      <li><a href="mpg.html">Models of Good Practice</a></li>
+      <li class="active">
+        <a href="contact.html">Contact me</a></li>
+    </ul>
+
+    <div class="footer">Email: jordan.ali.1997@googlemail.com</div>
+    </div>
+    <body>
+      <h1>Contact me</h1>
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="fname">Email</label>
+        <input type="text" id="Email" name="Email" placeholder="Email here..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+  </div>
+<h1>Find me</h1>
+<div id="map" style="width:100%;height:500px"></div>
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(51.587310, -2.998165);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDApW6WJQu9S-nAdWkDuCgmzbGxMf6HcVw&callback=myMap"></script>
+</script>
+    </body>
+  </main>
+</html>
